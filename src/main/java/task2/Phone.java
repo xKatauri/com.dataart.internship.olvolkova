@@ -9,7 +9,7 @@ public abstract class Phone {
     int number;
     int issueDate;
 
-    HashMap<String, Contact> contacts = new HashMap<String, Contact>();
+    HashMap<String, Contact> contacts = new HashMap<>();
 
     public String getBrand() {
         return brand;
@@ -39,7 +39,7 @@ public abstract class Phone {
         return contact.getPhoneNumber();
     }
 
-    // Overload
+    // Overload for addContact
     public void addContact(Contact c) {
         contacts.put(c.getName(), c);
     }
